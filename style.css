@@ -98,9 +98,11 @@
 }
 /*---------------------------- SECTION PHOTOS-----------------------------*/
 #photos {
-	background-color: #e6e6e6;
+	background-color: #d8d8d8;
 }
-
+#masonry {
+	display: none;
+}
 /*--------------------------------- FOOTER--------------------------------*/
 footer {
 	background-color: rgb(28,43,53);
@@ -111,8 +113,117 @@ footer {
 .socialmediablue, a {
 	color: #4682B4;
 }
-/*----------------------------------MEDIA QUERIES-------------------------*/
 
+/*--------------------------------- MEDIA QUERIES--------------------------------*/
+@media (min-width: 767px) {
+
+
+/*In HTML: 
+Header
+	Div: Margin
+	Button LearnMore: Margin  
+*/
+
+	.logosimplon {
+		position: relative;
+		width: 350px;
+		margin-left: 15%;
+
+	}
+	#title {
+		font-size: 60px;
+		padding-top: 200px;
+		text-align: center;
+
+	}
+
+	#learnmore{
+		box-shadow: 0px 2px 0px #2d6898;
+	}
+	.square {
+		width: 60%;
+		margin: auto;
+	}
+	.card-img-top {
+	    width: 200px;
+	    display: block;
+	    margin: auto;
+	}
+	#historyFirstP {
+		font-size: 22px;
+	}
+	#photos {
+		text-align: center;
+	}
+	#pics {
+	display: none;
+	}
+	#masonry {
+	display: block;
+	}
+}
+
+/*.grid {
+  max-width: 1200px;
+}*/
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item { 
+	float: left;
+	width: 100%;
+}
+.grid-sizer {
+  width: 100%;
+}
+/*.grid-item img {
+  display: block;
+  max-width: 100%;
+}*/
+
+.grid50 { width: 50%; }
+
+.Size767 {
+	width: 60%; 
+	display: block;
+	margin: auto;
+}
+
+/*--------------------------------------*/
+@media (min-width: 990px) {
+/*In HTML: 
+Header
+	Button LearnMore: Margin  
+*/
+	#title {
+		font-size: 60px;
+		padding-top: 250px;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+	.MarginLR990{
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+	.ContainerWidth990 {
+		width: 80%;
+	}
+
+	.card-img-top {
+	    width: 100%;
+	    display: block;
+	    margin: auto;
+	}
+	#historyFirstP {
+		font-size: 24px;
+	}
+
+}
 /*---------------------------------WIDTH 1199px----------------------------*/
 
 @media (min-width: 1199px){
@@ -123,6 +234,12 @@ footer {
 	height: 522px;
 
 }
+#learnmore{
+	margin-top: 100px;
+}
+.logosimplon{
+	width: 200px;
+}
 .aboutfb{
 	margin-right: 150px;
 }
@@ -132,6 +249,7 @@ footer {
 }
 .historyfb{
 	margin-left: 100px;
+
 }
 
 #photos{
@@ -146,6 +264,12 @@ footer {
   	grid-template-areas: "img300 img300 img776" "img800 img400 img776" "img800 img2476 img776" "img140 img140 img439";
   	
 
+}
+#pics{
+	display: grid;
+}
+#masonry{
+	display: none;
 }
 .img800 { grid-area: img800;
 	padding: 10px; }
@@ -167,15 +291,20 @@ padding: 10px; }
 
 .img439 { grid-area: img439;
 padding: 10px; }
+.imgpart{
+	margin-right:5%;
+	margin-left:17%;
+
 }
 #exampleInputEmail1{
 	width: 30%;
 }
 }
 /*-------------------WIDTH 1920px---------------------------------------------------------*/
-@media (min-width: 1920px){
-
-#features{
-	width: 50px;
-}
+@media (min-width: 1920px) {
+	
+	.card-body{
+		margin-right: 20%;
+		margin-left:20%;
+	}
 }

@@ -7,3 +7,9 @@ function openNav() {
         nav.style.display = "none";
     }
 }
+//---------------------LOAD MASONRY WITH JQUERY----------------------------------------
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
