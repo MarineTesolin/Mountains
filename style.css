@@ -121,7 +121,7 @@ footer {
 	background: rgb(51,51,49);
 	color: rgb(183,183,181);
 	height: 522px;
-	width: 522px;
+
 }
 .aboutfb{
 	margin-right: 150px;
@@ -133,13 +133,36 @@ footer {
 .historyfb{
 	margin-left: 100px;
 }
-}
+
 #photos{
 	text-align: center;
+
 }
-.imgpart{
-	width: 60%;
+
+#partenaires{
+
 }
 #exampleInputEmail1{
 	width: 30%;
+}
+.photosali{
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr 1fr 1fr;
+  	grid-template-areas: "img300 img300 img776" "img800 img400 img776" "img800 img2476 img776" "img140 img140 img439";
+  	width: 100%;
+}
+.img800 { grid-area: img800; }
+
+.img300 { grid-area: img300; }
+
+.img776 { grid-area: img776; }
+
+.img400 { grid-area: img400; }
+
+.img2476 { grid-area: img2476; }
+
+.img140 { grid-area: img140; }
+
+.img439 { grid-area: img439; }
 }
