@@ -139,30 +139,43 @@ footer {
 
 }
 
-#partenaires{
-
-}
-#exampleInputEmail1{
-	width: 30%;
-}
 .photosali{
 	display: grid; 
 	grid-template-columns: 1fr 1fr 1fr;
   	grid-template-rows: 1fr 1fr 1fr 1fr;
   	grid-template-areas: "img300 img300 img776" "img800 img400 img776" "img800 img2476 img776" "img140 img140 img439";
-  	width: 100%;
+  	
+
 }
-.img800 { grid-area: img800; }
+.img800 { grid-area: img800;
+	padding: 10px; }
 
-.img300 { grid-area: img300; }
+.img300 { grid-area: img300;
+padding: 10px; }
 
-.img776 { grid-area: img776; }
+.img776 { grid-area: img776;
+padding: 10px; }
 
-.img400 { grid-area: img400; }
+.img400 { grid-area: img400; 
+	padding: 10px;}
 
-.img2476 { grid-area: img2476; }
+.img2476 { grid-area: img2476;
+padding: 10px; }
 
-.img140 { grid-area: img140; }
+.img140 { grid-area: img140;
+	padding: 10px; }
 
-.img439 { grid-area: img439; }
+.img439 { grid-area: img439;
+padding: 10px; }
+}
+#exampleInputEmail1{
+	width: 30%;
+}
+}
+/*-------------------WIDTH 1920px---------------------------------------------------------*/
+@media (min-width: 1920px){
+
+#features{
+	width: 50px;
+}
 }
